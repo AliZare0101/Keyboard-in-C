@@ -4,6 +4,22 @@
 
 int main()
 {
-    keybd_event(0x41, 0, KEYEVENTF_KEYUP, 0);
-    return 0;
+    int number;
+    printf("\nEnter a number: ");
+    scanf("%d", &number);
+
+    switch(number)
+    {
+    case 1:
+        printf("\nnum lock");
+        keybd_event(VK_NUMLOCK , 0x45 , VK_NUMLOCK , 0);
+        break;
+
+    case 2:
+        printf("\ncaps lock");
+        keybd_event(VK_CAPITAL , 0x14 , VK_CAPITAL , 0);
+        keybd_event
+        break;
+    }
+       return 0;
 }
